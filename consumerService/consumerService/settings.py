@@ -156,7 +156,7 @@ USE_TZ = False
 STATIC_URL = 'static/'
 MEDIA_URL='/images/'
 MEDIA_ROOT=BASE_DIR/'media'
-STATICFILES_DIRS = [BASE_DIR/'static',]
+STATICFILES_DIRS = [BASE_DIR/'staticfiles_build/static',]
 STATIC_ROOT =BASE_DIR/'staticfiles'
 
 

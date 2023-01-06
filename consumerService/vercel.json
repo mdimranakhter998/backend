@@ -4,7 +4,7 @@
     {
     "src": "consumerService/wsgi.py",
     "use": "@vercel/python",
-    "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    "config": { "maxLambdaSize": "15mb", "runtime": "python3.10" }
     },
     {
     "src": "build_files.sh",
@@ -16,12 +16,12 @@
     ],
     "routes": [
     {
-    "src": "/(.*)",
+    "src": "/static/(.*)",
     "dest": "/static/$1"
     },
     {
     "src": "/(.*)",
-    "dest": "devntechno/wsgi.py"
+    "dest": "consumerService/wsgi.py"
     }
     ]
     }
