@@ -17,10 +17,10 @@
     "routes": [
     {
     "src": "/static/(.*)",
-    "dest": "/"
+    "dest": "/static/$1"
     },
     {
-    "src": "/(.*)",
+    "src": "api/(.*)",
     "dest": "consumerService/wsgi.py"
     }
     ]
